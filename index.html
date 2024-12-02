@@ -1,32 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <section>
-        <head>Hello and welkum to my tierlist!!1!1</head>
-        <h3>This is gonna be <em>interesting</em> -O-</h3>
-    </section>
-    <section>
-      <h1>T1:</h1>
-    </section>
-    <section>
-      <h1>T2:</h1>
-    </section>
-    <section>
-       <h1>T3:</h1>
-           <p>pavGamingzz: LT3 - NethPot</p>
-           <p>pavGamingzz: LT3 - CPVP</p>
-    </section>
-    <section>
-       <h1>T4:</h1>
-           <p><strong>pavGamingzz: HT4 - UHC</strong></p>
-           <p><strong>Monkeywithnopant: HT4 - NethPot</strong></p>
-           <p>Monkeywithnopant: LT4 - UHC</p>
-           <p>amsuckei: LT4 - CPVP</p>
-    </section>
-    <section>
-       <h1>T5:</h1>
-           <p><strong>amsuckei: HT5 - NethPot</strong></p>
-           <p>amsuckei: LT5 - SMP</p>
-    </section>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amsuckei's Tierlist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with Logo and Title -->
+  <header class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>amsuckei's tierlist</h1>
+  </header>
+
+  <div id="leaderboardContainer" class="leaderboard-container">
+    <div class="tabs">
+      <!-- Category Buttons -->
+      <button class="tab active" onclick="loadLeaderboard('overall', '#808080')">Overall</button>
+      <button class="tab" onclick="loadLeaderboard('crystalpvp', '#C54B8C')">CrystalPVP</button>
+      <button class="tab" onclick="loadLeaderboard('nethpot', '#6B4C7E')">NethPot</button>
+      <button class="tab" onclick="loadLeaderboard('smp', '#355E3B')">SMP</button>
+      <button class="tab" onclick="loadLeaderboard('diapot', '#0F52BA')">DiaPot</button>
+      <button class="tab" onclick="loadLeaderboard('elytrapvp', '#D3D3D3')">ElytraPVP</button>
+      <button class="tab" onclick="loadLeaderboard('cartpvp', '#DC143C')">CartPVP</button>
+      <button class="tab" onclick="loadLeaderboard('uhc', '#C04000')">UHC</button>
+    </div>
+
+    <!-- Subcategory Buttons -->
+    <div id="subcategoryTabs" class="subcategory-tabs">
+      <button class="sub-tab" onclick="loadSubcategory('T1')">T1</button>
+      <button class="sub-tab" onclick="loadSubcategory('T2')">T2</button>
+      <button class="sub-tab" onclick="loadSubcategory('T3')">T3</button>
+      <button class="sub-tab" onclick="loadSubcategory('T4')">T4</button>
+      <button class="sub-tab" onclick="loadSubcategory('T5')">T5</button>
+    </div>
+
+    <!-- Leaderboard with column names -->
+    <ul id="leaderboard" class="leaderboard">
+      <li class="leaderboard-header">
+        <span class="name">Player Name</span>
+        <span class="region">Region</span>
+        <span class="rating">Rating</span>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    let leaderboardData = {};
+    let selectedCategory = 'overall'; // Default category
+    let selectedSubcategory = 'T1'; // Default subcategory
+
+    // Function to darken a color
+    function darkenColor(color, percentage) {
+      const num = parseInt(color.slice(1), 16);
+      const amt = Math.round(2.55 * percentage);
+      const R = (num >> 16) - amt;
+      const G = ((num >> 8) & 0x00ff) - amt;
+      const B = (num & 0x0000ff) - amt;
+
+      return (
+        '#' +
+        (0x1000000 +
+          (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
+          (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
+          (B < 255 ? (B < 1 ? 0 : B) : 255))
+          .toString(16)
+          .slice(1)
+      );
+    }
+
+    // Fetch the JSON file
+    async function fetchLeaderboardData() {
+      const response = await fetch('leaderboardData.json');
+      leaderboardData = await response.json();
+      loadLeaderboard(selectedCategory, '#808080'); // Load default category
+    }
+
+    // Load leaderboard based on category
+    function loadLeaderboard(category, color) {
+      selectedCategory = category; // Set selected category
+      selectedSubcategory = 'T1'; // Reset subcategory when category changes
+
+      // Change background color
+      const darkerColor = darkenColor(color, 20);
+      document.getElementById('leaderboardContainer').style.backgroundColor = color;
+
+      // Update tabs
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+        tab.style.backgroundColor = '#333';
+      });
+      const activeTab = document.querySelector(`.tab[onclick="loadLeaderboard('${category}', '${color}')"]`);
+      activeTab.classList.add('active');
+      activeTab.style.backgroundColor = darkerColor;
+
+      // Populate leaderboard
+      loadSubcategory('T1'); // Load default subcategory for the selected category
+    }
+
+    // Load leaderboard for a specific subcategory (T1, T2, etc.)
+    function loadSubcategory(subcategory) {
+      selectedSubcategory = subcategory;
+
+      // Update subcategory tabs
+      const subTabs = document.querySelectorAll('.sub-tab');
+      subTabs.forEach(tab => {
+        tab.classList.remove('active');
+        tab.style.backgroundColor = '#333';
+      });
+      const activeSubTab = document.querySelector(`.sub-tab[onclick="loadSubcategory('${subcategory}')"]`);
+      activeSubTab.classList.add('active');
+      activeSubTab.style.backgroundColor = '#444';
+
+      // Populate leaderboard based on selected category and subcategory
+      const leaderboard = document.getElementById('leaderboard');
+      leaderboard.innerHTML = ''; // Clear existing leaderboard items
+      if (leaderboardData[selectedCategory] && leaderboardData[selectedCategory][subcategory]) {
+        leaderboardData[selectedCategory][subcategory].forEach(player => {
+          const item = document.createElement('li');
+          item.className = 'leaderboard-item';
+          item.innerHTML = `
+            <span class="name">${player.name}</span>
+            <span class="region">${player.region}</span>
+            <span class="rating">${player.rating}</span>
+          `;
+          leaderboard.appendChild(item);
+        });
+      }
+    }
+
+    // Initialize
+    fetchLeaderboardData();
+  </script>
+</body>
 </html>

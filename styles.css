@@ -1,0 +1,137 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Header (Logo and Title) */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Solid background color for the header */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .logo {
+    width: 100px; /* Increased size of the logo */
+    height: 100px; /* Increased size of the logo */
+    margin-right: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Increased text size */
+    margin: 0;
+    color: white;
+  }
+  
+  /* Header Links */
+  .header-links {
+    display: flex;
+    margin-left: auto; /* Push links to the right */
+  }
+  
+  .header-link-image {
+    width: 40px; /* Fixed size for images */
+    height: 40px;
+    margin-left: 20px; /* Space between images */
+    cursor: pointer;
+  }
+  
+  /* Leaderboard Container */
+  .leaderboard-container {
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Tab Menu Styles */
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #444;
+    font-size: 1.2em; /* Increase tab text size */
+  }
+  
+  .tab {
+    flex: 1 1 12.5%;
+    text-align: center;
+    padding: 15px 0; /* Increased padding for bigger buttons */
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .tab:hover {
+    background-color: #444;
+  }
+  
+  .tab.active {
+    color: black;
+    transition: background-color 0.3s;
+  }
+  
+  /* Subcategory Tab Menu Styles */
+  .subcategory-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-bottom: 2px solid #444;
+  }
+  
+  .sub-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .sub-tab:hover {
+    background-color: #444;
+  }
+  
+  .sub-tab.active {
+    background-color: #555;
+  }
+  
+  /* Leaderboard Styles */
+  .leaderboard {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .rank, .name, .region, .points {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .leaderboard-item span {
+    padding: 0 10px;
+  }
+  

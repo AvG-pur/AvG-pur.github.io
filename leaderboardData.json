@@ -1,0 +1,151 @@
+{
+    "overall": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "pavGamingzz", "region": "EU", "rating": "LT3"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "Monkeywithnopant", "region": "EU", "rating": "HT4"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "amsuckei", "region": "EU", "rating": "HT5"}
+      ]
+    },
+    "crystalpvp": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "pavGamingzz", "region": "EU", "rating": "LT3"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "amsuckei", "region": "EU", "rating": "LT4"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ]
+    },
+    "nethpot": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "pavGamingzz", "region": "EU", "rating": "LT3"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "Monkeywithnopant", "region": "EU", "rating": "HT4"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "amsuckei", "region": "EU", "rating": "HT5"}
+      ]
+    },
+    "smp": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "amsuckei", "region": "EU", "rating": "LT5"}
+      ]
+    },
+    "diapot": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ]
+    },
+    "elytrapvp": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ]
+    },
+    "cartpvp": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ]
+    },
+    "uhc": {
+      "T1": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T2": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T3": [
+        {"name": "Player", "region": "Region", "rating": "Tier"}
+      ],
+      "T4": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "pavGamingzz", "region": "EU", "rating": "HT4"},
+        {"name": "Monkeywithnopant", "region": "EU", "rating": "LT4"}
+      ],
+      "T5": [
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "amsuckei", "region": "EU", "rating": "HT5"}
+      ]
+    }
+  }
+  
