@@ -35,7 +35,8 @@
         {"name": "amsuckei", "region": "EU", "rating": "LT4"}
       ],
       "T5": [
-        {"name": "Player", "region": "Region", "rating": "Tier"}
+        {"name": "Player", "region": "Region", "rating": "Tier"},
+        {"name": "bucumber45", "region": "NA", "rating": "LT5"}
       ]
     },
     "nethpot": {
