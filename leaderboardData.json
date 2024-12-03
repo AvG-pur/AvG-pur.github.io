@@ -32,11 +32,13 @@
       ],
       "T4": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
-        {"name": "amsuckei", "region": "EU", "rating": "LT4"}
+        {"name": "amsuckei", "region": "EU", "rating": "LT4"},
+        {"name": "ComBatPierce", "region": "EU", "rating": "LT4"}
       ],
       "T5": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
-        {"name": "bucumber45", "region": "NA", "rating": "LT5"}
+        {"name": "bucumber45", "region": "NA", "rating": "LT5"},
+        {"name": "MonkeyWithNoPants", "region": "EU", "rating": "HT5"}
       ]
     },
     "nethpot": {
@@ -48,7 +50,8 @@
       ],
       "T3": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
-        {"name": "pavGamingzz", "region": "EU", "rating": "LT3"}
+        {"name": "pavGamingzz", "region": "EU", "rating": "LT3"},
+        {"name": "OzyMandiasZaKing", "region": "EU", "rating": "HT3"}
       ],
       "T4": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
