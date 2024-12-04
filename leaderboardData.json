@@ -140,11 +140,11 @@
       ],
       "T3": [
         {"name": "Player", "region": "Region", "rating": "Tier"}
+        {"name": "Monkeywithnopant", "region": "EU", "rating": "LT3"}
       ],
       "T4": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
-        {"name": "pavGamingzz", "region": "EU", "rating": "HT4"},
-        {"name": "Monkeywithnopant", "region": "EU", "rating": "LT4"}
+        {"name": "pavGamingzz", "region": "EU", "rating": "HT4"}
       ],
       "T5": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
