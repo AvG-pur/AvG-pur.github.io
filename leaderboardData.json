@@ -59,7 +59,8 @@
       ],
       "T5": [
         {"name": "Player", "region": "Region", "rating": "Tier"},
-        {"name": "amsuckei", "region": "EU", "rating": "HT5"}
+        {"name": "amsuckei", "region": "EU", "rating": "HT5"},
+        {"name": "XFerraMC", "region": "EU", "rating": "HT5"}
       ]
     },
     "smp": {
