@@ -139,7 +139,7 @@
         {"name": "Player", "region": "Region", "rating": "Tier"}
       ],
       "T3": [
-        {"name": "Player", "region": "Region", "rating": "Tier"}
+        {"name": "Player", "region": "Region", "rating": "Tier"},
         {"name": "Monkeywithnopant", "region": "EU", "rating": "LT3"}
       ],
       "T4": [
